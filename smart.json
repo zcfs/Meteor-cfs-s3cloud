@@ -2,7 +2,7 @@
   "name": "cfs-s3cloud",
   "description": "CollectionFS, S3Cloud Storage adapter",
   "homepage": "https://github.com/CollectionFS/Meteor-cfs-s3cloud",
-  "author": "CollectionFS core @aldeed & @raix",
+  "author": "Eric Dobbertin (https://github.com/aldeed), Morten Henriksen (https://github.com/raix)",
   "version": "0.0.3",
   "git": "https://github.com/CollectionFS/Meteor-cfs-s3cloud.git",
   "packages": {
