@@ -1,4 +1,5 @@
 Package.describe({
+  version: '0.0.0',
   summary: 'CollectionFS, S3 Cloud Storage Adapter'
 });
 
@@ -72,7 +73,7 @@ Package.on_use(function(api) {
 });
 
 Package.on_test(function (api) {
-  api.use('collectionFS');
+  api.use('collectionfs');
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);
