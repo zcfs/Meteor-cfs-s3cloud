@@ -1,4 +1,5 @@
 Package.describe({
+  name: 'cfs:s3cloud',
   version: '0.0.0',
   summary: 'CollectionFS, S3 Cloud Storage Adapter'
 });
@@ -9,20 +10,22 @@ Package.describe({
 // });
 
 Package.on_use(function(api) {
+  api.versionsFrom('METEOR@0.9.1');
+
   // Rig the collectionFS package v2
   api.imply([
     // Base util rigs the basis for the FS scope and some general helper mehtods
-    'cfs-base-package',
+    'cfs:base-package@0.0.0',
     // Transfer is basically the up and download queues via ddp
-    'cfs-transfer',
+    'cfs:transfer@0.0.0',
     // Want to make use of the file object and its api, yes!
-    'cfs-file',
+    'cfs:file@0.0.0',
     // Add the FS.Collection to keep track of everything
-    'cfs-collection',
+    'cfs:collection@0.0.0',
     // Add the option to have ddp and http access point
-    'cfs-access-point',
+    'cfs:access-point@0.0.0',
     // We might also want to have the server create copies of our files?
-    'cfs-worker',
+    'cfs:worker@0.0.0',
   ]);
 
 
@@ -72,12 +75,12 @@ Package.on_use(function(api) {
   // ], 'server');
 });
 
-Package.on_test(function (api) {
-  api.use('collectionfs');
-  api.use('test-helpers', 'server');
-  api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
-           'random', 'deps']);
+// Package.on_test(function (api) {
+//   api.use('collectionfs');
+//   api.use('test-helpers', 'server');
+//   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
+//            'random', 'deps']);
 
-  api.add_files('tests/client-tests.js', 'server');
-  api.add_files('tests/server-tests.js', 'client');
-});
+//   api.add_files('tests/client-tests.js', 'server');
+//   api.add_files('tests/server-tests.js', 'client');
+// });
