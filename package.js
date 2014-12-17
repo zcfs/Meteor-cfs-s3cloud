@@ -24,7 +24,7 @@ Package.onUse(function(api) {
     // Add the FS.Collection to keep track of everything
     'cfs:collection@0.5.0',
     // Add the option to have ddp and http access point
-    'cfs:access-point@0.1.40',
+    'cfs:access-point@0.1.41',
     // We might also want to have the server create copies of our files?
     'cfs:worker@0.1.0',
   ]);
