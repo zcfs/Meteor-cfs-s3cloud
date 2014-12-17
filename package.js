@@ -18,7 +18,7 @@ Package.onUse(function(api) {
     // Base util rigs the basis for the FS scope and some general helper mehtods
     'cfs:base-package@0.0.26',
     // Transfer is basically the up and download queues via ddp
-    'cfs:transfer@0.0.14',
+    'cfs:transfer@0.0.15',
     // Want to make use of the file object and its api, yes!
     'cfs:file@0.0.14',
     // Add the FS.Collection to keep track of everything
