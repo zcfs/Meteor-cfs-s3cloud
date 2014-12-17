@@ -1,7 +1,8 @@
 Package.describe({
   name: 'cfs:s3cloud',
   version: '0.0.0',
-  summary: 'CollectionFS, S3 Cloud Storage Adapter'
+  summary: 'CollectionFS, S3 Cloud Storage Adapter',
+  git: 'https://github.com/CollectionFS/Meteor-cfs-s3cloud.git'
 });
 
 // Npm.depends({
@@ -9,21 +10,21 @@ Package.describe({
 //   temp: "0.6.0"
 // });
 
-Package.on_use(function(api) {
-  api.versionsFrom('METEOR@0.9.1');
+Package.onUse(function(api) {
+  api.versionsFrom('1.0');
 
   // Rig the collectionFS package v2
   api.imply([
     // Base util rigs the basis for the FS scope and some general helper mehtods
-    'cfs:base-package@0.0.0',
+    'cfs:base-package@0.0.26',
     // Transfer is basically the up and download queues via ddp
-    'cfs:transfer@0.0.0',
+    'cfs:transfer@0.0.14',
     // Want to make use of the file object and its api, yes!
     'cfs:file@0.0.0',
     // Add the FS.Collection to keep track of everything
-    'cfs:collection@0.0.0',
+    'cfs:collection@0.0.1',
     // Add the option to have ddp and http access point
-    'cfs:access-point@0.0.0',
+    'cfs:access-point@0.1.40',
     // We might also want to have the server create copies of our files?
     'cfs:worker@0.0.0',
   ]);
