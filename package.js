@@ -1,6 +1,6 @@
 Package.describe({
   name: 'cfs:s3cloud',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: 'CollectionFS, S3 Cloud Storage Adapter',
   git: 'https://github.com/CollectionFS/Meteor-cfs-s3cloud.git'
 });
