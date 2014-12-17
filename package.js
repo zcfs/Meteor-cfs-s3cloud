@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     // Transfer is basically the up and download queues via ddp
     'cfs:transfer@0.0.15',
     // Want to make use of the file object and its api, yes!
-    'cfs:file@0.0.14',
+    'cfs:file@0.0.15',
     // Add the FS.Collection to keep track of everything
     'cfs:collection@0.5.0',
     // Add the option to have ddp and http access point

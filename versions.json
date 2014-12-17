@@ -42,7 +42,7 @@
     ],
     [
       "cfs:data-man",
-      "0.0.2"
+      "0.0.3"
     ],
     [
       "cfs:file",
@@ -50,7 +50,7 @@
     ],
     [
       "cfs:http-methods",
-      "0.0.24"
+      "0.0.25"
     ],
     [
       "cfs:http-publish",
@@ -78,7 +78,7 @@
     ],
     [
       "cfs:transfer",
-      "0.0.14"
+      "0.0.15"
     ],
     [
       "cfs:worker",
