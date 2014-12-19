@@ -22,11 +22,11 @@ Package.onUse(function(api) {
     // Want to make use of the file object and its api, yes!
     'cfs:file@0.1.15',
     // Add the FS.Collection to keep track of everything
-    'cfs:collection@0.5.2',
+    'cfs:collection@0.5.3',
     // Add the option to have ddp and http access point
     'cfs:access-point@0.1.43',
     // We might also want to have the server create copies of our files?
-    'cfs:worker@0.1.2',
+    'cfs:worker@0.1.3',
   ]);
 
 
